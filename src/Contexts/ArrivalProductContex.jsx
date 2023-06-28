@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, createContext, useEffect } from "react";
-import data from "../Data/NewArrival";
+import data from "../Data/newarrival";
 
 export const ArrivalProductContext = createContext();
 

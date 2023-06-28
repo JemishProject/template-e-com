@@ -5,18 +5,14 @@ import { Shop } from "./Pages/Shop";
 import { ProductDetails } from "./Pages/ProductDetails";
 import { Blogs } from "./Pages/Blogs";
 import { BlogsDetails } from "./Pages/BlogsDetails";
-import { Header } from "./Components/Header";
 import { Hero } from "./Components/Hero";
 import { About } from "./Components/About";
 import { Cart } from "./Components/Cart";
 import { Contact } from "./Components/Contact";
 import { Login } from "./Components/Login";
 import { SignUp } from "./Components/SignUp";
-import { Footer } from "./Components/Footer";
-import { Newsletters } from "./Components/Newsletters";
 import { PrivacyPolicy } from "./Components/PrivacyPolicy";
 import { TermsCondition } from "./Components/TermsCondition";
-import { BackToTopBtn } from "./Components/BackToTopBtn";
 
 export const App = () => {
   const { pathname } = useLocation();
@@ -24,8 +20,7 @@ export const App = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="overflow-hidden">
-      <Header />
+    <div>
       <Routes>
         <Route index element={<Hero />} />
         <Route path="/shop" element={<Shop />} />
@@ -40,9 +35,6 @@ export const App = () => {
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termscondition" element={<TermsCondition />} />
       </Routes>
-      <Newsletters />
-      <BackToTopBtn />
-      <Footer />
     </div>
   );
 };

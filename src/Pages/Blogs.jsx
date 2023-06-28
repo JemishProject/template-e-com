@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { BlogsContext } from "../Contexts/BlogsContext";
 import Blog from "../Components/Blog";
+import Layout from "./Layout";
 
 export const Blogs = () => {
   const { blogs } = useContext(BlogsContext);
   return (
+  <Layout>
     <div className="w-full h-full">
       <div className="blog flex flex-col w-full h-[50vh] text-white justify-center items-center text-center bg-cover">
         <h2 className="font-bold mb-2 mt-16 text-4xl">#stayhome</h2>
@@ -18,5 +20,6 @@ export const Blogs = () => {
         </div>
       </div>
     </div>
+  </Layout>
   );
 };

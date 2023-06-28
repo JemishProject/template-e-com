@@ -68,16 +68,20 @@ export const Footer = () => {
                 From App Store or Google Play Store
               </p>
               <div className="flex flex-row space-x-2">
-                <img
-                  src={appstore}
-                  alt="appstorelogo"
-                  className="border cursor-pointer border-black rounded-lg"
-                />
-                <img
-                  src={playstore}
-                  alt="playstorelogo"
-                  className="border cursor-pointer border-black rounded-lg"
-                />
+                <div>
+                  <img
+                    src={appstore}
+                    alt="appstorelogo"
+                    className="border cursor-pointer border-black rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src={playstore}
+                    alt="playstorelogo"
+                    className="border cursor-pointer border-black rounded-lg"
+                  />
+                </div>
               </div>
               <div className="mt-4">
                 <p className="font-semibold text-slate-500">

@@ -5,11 +5,12 @@ import { NewArrivals } from "./NewArrivals";
 import { Features } from "./Features";
 import { Services } from "./Services";
 import { Banner } from "./Banner";
+import Layout from "../Pages/Layout";
 
 export const Hero = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <Layout>
       <div className="home w-full h-screen flex flex-col justify-center items-start px-20 bg-cover">
         <div>
           <h4 className="font-bold mb-4">Trade-in-offer</h4>
@@ -31,6 +32,6 @@ export const Hero = () => {
       <Services />
       <NewArrivals />
       <Banner />
-    </>
+    </Layout>
   );
 };
