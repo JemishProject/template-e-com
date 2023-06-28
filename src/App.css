@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+html {
+  font-size: 85%;
+}
+.nav-links a {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+.navlink a {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #088178;
+}
+footer span {
+  cursor: pointer;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+.error {
+  color: red;
+}
+.home {
+  background-image: url("./img/hero4.png");
+}
+.aboutpage {
+  background-image: url("./img/about/banner.png");
+}
+.shop {
+  background-image: url("./img/banner/b1.jpg");
+}
+.services {
+  background-image: url("./img/banner/b2.jpg");
+}
+.contact {
+  background-image: url("./img/about/banner.png");
+}
+.blog {
+  background-image: url("./img/banner/b19.jpg");
+}
+.sm-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+.sm-banner h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.sm-banner h2,
+p {
+  margin-bottom: 8px;
+}
+.sm-banner button {
+  padding: 8px;
+  border: 1px solid white;
+  font-weight: 600;
+}
+.sm-banner .bannerbox-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  min-width: 48%;
+  height: 50vh;
+  background-image: url("./img/banner/b17.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.sm-banner .bannerbox-2 {
+  background-image: url("./img/banner/b10.jpg");
+}
+.banner-2 h1 {
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+}
+.banner-2 h2 {
+  font-weight: 800;
+  font-size: 15px;
+  color: #ec544e;
+}
+.banner-2 .banner-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  min-width: 30%;
+  height: 30vh;
+  background-image: url("./img/banner/b7.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.banner-2 .banner-box2 {
+  background-image: url("./img/banner/b4.jpg");
+}
+.banner-2 .banner-box3 {
+  background-image: url("./img/banner/b18.jpg");
+}
